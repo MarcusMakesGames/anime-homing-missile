@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://dlj78rv8gythv"]
+
+[ext_resource type="Texture2D" uid="uid://djibcqm6npi8r" path="res://street_test.png" id="1_8b3gb"]
+
+[node name="Line2D" type="Line2D"]
+texture_repeat = 2
+points = PackedVector2Array(-66, 30, 0, 0, 0, 0, 76, 28, 91, 55, 86, 87, 67, 100, 41, 133, 34, 151, 39, 165, 65, 196, 111, 195, 167, 191, 187, 156, 197, 118, 176, 75, 215, 48)
+width = 15.0
+texture = ExtResource("1_8b3gb")
+texture_mode = 1

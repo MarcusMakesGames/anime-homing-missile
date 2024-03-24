@@ -1,0 +1,59 @@
+[gd_scene load_steps=7 format=3 uid="uid://doqjqs7uv2mto"]
+
+[ext_resource type="Script" path="res://scripts/target_follow.gd" id="2_ltyda"]
+[ext_resource type="PackedScene" uid="uid://cirbcomjq5el2" path="res://scenes/missile_launcher.tscn" id="3_ttnye"]
+
+[sub_resource type="Curve2D" id="Curve2D_u25e8"]
+_data = {
+"points": PackedVector2Array(0, 0, 30, -30, 40, 40, -30, -30, 30, 30, 280, 40, 30, -30, -30, 30, 280, 130, 30, 30, -30, -30, 40, 130, -30, 30, 0, 0, 40, 40)
+}
+point_count = 5
+
+[sub_resource type="Gradient" id="Gradient_mow1w"]
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_e7kwb"]
+gradient = SubResource("Gradient_mow1w")
+width = 12
+height = 4
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bbd1t"]
+size = Vector2(10, 2)
+
+[node name="Sandbox" type="Node2D"]
+
+[node name="TargetPath" type="Path2D" parent="."]
+curve = SubResource("Curve2D_u25e8")
+script = ExtResource("2_ltyda")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="TargetPath"]
+position = Vector2(40, 40)
+rotation = -0.785398
+
+[node name="Target" type="Area2D" parent="TargetPath/PathFollow2D" groups=["Targets"]]
+collision_layer = 2
+collision_mask = 0
+
+[node name="Sprite2D" type="Sprite2D" parent="TargetPath/PathFollow2D/Target"]
+texture = SubResource("GradientTexture2D_e7kwb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TargetPath/PathFollow2D/Target"]
+shape = SubResource("RectangleShape2D_bbd1t")
+
+[node name="MissileLauncher" parent="." instance=ExtResource("3_ttnye")]
+position = Vector2(160, 180)
+
+[node name="Label" type="Label" parent="."]
+visible = false
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 2.0
+offset_top = 168.0
+offset_right = 56.0
+offset_bottom = 191.0
+grow_vertical = 0
+theme_override_constants/line_spacing = 0
+theme_override_font_sizes/font_size = 4
+text = "LMB - shoot single missile
+RMB - shoot missile barrage"

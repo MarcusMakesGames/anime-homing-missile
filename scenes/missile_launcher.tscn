@@ -1,0 +1,56 @@
+[gd_scene load_steps=6 format=3 uid="uid://cirbcomjq5el2"]
+
+[ext_resource type="Script" path="res://scripts/missile_launcher.gd" id="1_qfgr3"]
+[ext_resource type="PackedScene" uid="uid://s2a66f3x55jd" path="res://scenes/homing_missile.tscn" id="2_oyrwl"]
+
+[sub_resource type="Gradient" id="Gradient_rfdbg"]
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_bxxvw"]
+gradient = SubResource("Gradient_rfdbg")
+width = 16
+height = 6
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_krgrr"]
+gradient = SubResource("Gradient_rfdbg")
+width = 9
+height = 14
+
+[node name="MissileLauncher" type="Node2D" node_paths=PackedStringArray("spawn_points")]
+script = ExtResource("1_qfgr3")
+spawn_points = [NodePath("Barrel/SpawnPoints/SpawnPoint"), NodePath("Barrel/SpawnPoints/SpawnPoint2"), NodePath("Barrel/SpawnPoints/SpawnPoint3"), NodePath("Barrel/SpawnPoints/SpawnPoint4"), NodePath("Barrel/SpawnPoints/SpawnPoint5"), NodePath("Barrel/SpawnPoints/SpawnPoint6"), NodePath("Barrel/SpawnPoints/SpawnPoint7")]
+missile_scene = ExtResource("2_oyrwl")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -3)
+texture = SubResource("GradientTexture2D_bxxvw")
+
+[node name="Barrel" type="Node2D" parent="."]
+position = Vector2(0, -4)
+
+[node name="Sprite2D" type="Sprite2D" parent="Barrel"]
+position = Vector2(0, -3)
+texture = SubResource("GradientTexture2D_krgrr")
+
+[node name="SpawnPoints" type="Node2D" parent="Barrel"]
+
+[node name="SpawnPoint" type="Marker2D" parent="Barrel/SpawnPoints"]
+position = Vector2(-3, -10)
+
+[node name="SpawnPoint2" type="Marker2D" parent="Barrel/SpawnPoints"]
+position = Vector2(-2, -10)
+
+[node name="SpawnPoint3" type="Marker2D" parent="Barrel/SpawnPoints"]
+position = Vector2(-1, -10)
+
+[node name="SpawnPoint4" type="Marker2D" parent="Barrel/SpawnPoints"]
+position = Vector2(0, -10)
+
+[node name="SpawnPoint5" type="Marker2D" parent="Barrel/SpawnPoints"]
+position = Vector2(1, -10)
+
+[node name="SpawnPoint6" type="Marker2D" parent="Barrel/SpawnPoints"]
+position = Vector2(2, -10)
+
+[node name="SpawnPoint7" type="Marker2D" parent="Barrel/SpawnPoints"]
+position = Vector2(3, -10)

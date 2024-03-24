@@ -1,0 +1,26 @@
+[gd_scene load_steps=6 format=3 uid="uid://s2a66f3x55jd"]
+
+[ext_resource type="Script" path="res://scripts/homing_missile.gd" id="1_p8hhq"]
+[ext_resource type="PackedScene" uid="uid://csepwlegs8lxj" path="res://scenes/explosion.tscn" id="2_dmona"]
+[ext_resource type="Texture2D" uid="uid://c3731x5cni7bt" path="res://assets/missile.png" id="2_rpwo0"]
+[ext_resource type="PackedScene" uid="uid://co6iiw23fuj5l" path="res://scenes/trail.tscn" id="3_lentr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n22qc"]
+size = Vector2(4, 1)
+
+[node name="HomingMissile" type="Area2D" node_paths=PackedStringArray("trail_node")]
+collision_layer = 0
+collision_mask = 2
+script = ExtResource("1_p8hhq")
+trail_node = NodePath("Trail")
+explosion_scene = ExtResource("2_dmona")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_n22qc")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_rpwo0")
+
+[node name="Trail" parent="." instance=ExtResource("3_lentr")]
+
+[connection signal="area_entered" from="." to="." method="_on_impact"]
