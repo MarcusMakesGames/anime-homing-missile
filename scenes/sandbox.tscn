@@ -44,7 +44,6 @@ shape = SubResource("RectangleShape2D_bbd1t")
 position = Vector2(160, 180)
 
 [node name="Label" type="Label" parent="."]
-visible = false
 anchors_preset = 2
 anchor_top = 1.0
 anchor_bottom = 1.0

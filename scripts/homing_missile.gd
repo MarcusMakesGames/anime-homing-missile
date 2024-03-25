@@ -2,9 +2,9 @@ class_name HomingMissile
 extends Area2D
 
 @export_category("Movement")
-@export var move_speed_start: float = 100 ## Move speed in pixels per seconds.
-@export var move_speed_acceleration: float = 10 ## Move speed in pixels per seconds.
-@export var move_speed_max: float = 200 ## Move speed in pixels per seconds.
+@export var move_speed_start: float = 100
+@export var move_speed_acceleration: float = 10
+@export var move_speed_max: float = 200
 
 @export_category("Durations")
 @export var lock_on_delay: float = 0.15

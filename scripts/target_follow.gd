@@ -1,6 +1,6 @@
 extends Path2D
 
-@export var move_speed: float = 90
+@export var move_speed: float = 120
 
 var _path_length: float
 var _progress_value: float
