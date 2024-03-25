@@ -1,5 +1,5 @@
 # Anime Homing Missile
-This is a proof of concept of "anime" style homing missiles that follow the target in a wave like pattern.
+This is a proof of concept of "anime" style homing missiles that follow the target in a wave like pattern. Made in Godot.
 
 ![anime-homing-missiles](https://github.com/MarcusMakesGames/anime-homing-missile/assets/133889324/e0303dde-76c5-4b40-88ed-7a1dd43e085f)
 
