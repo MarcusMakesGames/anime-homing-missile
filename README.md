@@ -29,7 +29,7 @@ The aim point is now moving "up" and "down" and the homing missile will try to r
 
 If the missile is now moving forward it will move in "waves" and gets closer to the target.
 
-The problem: The smaller the distance between homing missile and target get the stronger the wave motion gets.
+The problem: The smaller the distance between homing missile and target the stronger the wave motion gets.
 
 In the worst case the missile won't hit the target.
 
@@ -56,7 +56,16 @@ By doing this it creates a distance range in which the distance weight is kept b
 
 With the correct values the lateral offset of the aim point will get smaller the closer the homing missile gets.
 
-The homing missile is now functional but still hard to fine tune. It might already be good enough, but by adding
-
 ![aim_point_lateral_offset_distance](https://github.com/MarcusMakesGames/anime-homing-missile/assets/133889324/5c7ab8de-0db8-4660-9a1e-6da9dcd08445)
 
+The homing missile is now functional but it still has some strong motion even when close to the target.
+
+By reducing the lateral offset strength this can be minimized, but this would also result in an overall less exciting motion.
+
+To fix this another offset can be added to offset the aim point forward in front of the target.
+
+![homing-missile-barrage-lateral-offset](https://github.com/MarcusMakesGames/anime-homing-missile/assets/133889324/21d3758c-5115-420b-84c5-c11a0dcb6044)
+
+### Distance Forward Offset
+
+...
