@@ -67,5 +67,13 @@ To fix this another offset can be added to offset the aim point forward in front
 ![homing-missile-barrage-lateral-offset](https://github.com/MarcusMakesGames/anime-homing-missile/assets/133889324/21d3758c-5115-420b-84c5-c11a0dcb6044)
 
 ### Distance Forward Offset
+The forward distance offset uses the same distance calculation the distance based lateral amplitude uses.
 
-...
+It just uses two new values to calculate the forward offset:
+
+- min forward distance
+- max forward distance
+
+![aim_point_forward_offset_01](https://github.com/MarcusMakesGames/anime-homing-missile/assets/133889324/efcfb148-79e5-4811-8f38-c2137f9ff619)
+
+
