@@ -30,10 +30,22 @@ The aim point is now moving "up" and "down" and the homing missile will try to r
 If the missile is now moving forward it will move in "waves" and gets closer to the target.
 
 The problem: The smaller the distance between homing missile and target get the stronger the wave motion gets.
+
 In the worst case the missile won't hit the target.
+
 To fix this the strength of the lateral amplitude needs to get weaker smaller the distance between homing missile and target gets.
 
 ![aim_point_lateral_offset_02](https://github.com/MarcusMakesGames/anime-homing-missile/assets/133889324/514bb08f-1c7c-4fe8-b8ce-bbd1faafd39a)
 
 ### Distance Based Lateral Amplitude
+To calculate a distance base strength for the lateral amplitude, the homing missiles needs a couple of values:
+
+- min distance between homing missile and target
+- max distance between homing missile and target
+- min lateral offset strength (the length the aim point moves in each direction)
+- max laterla offset strength (the length the aim point moves in each direction)
+
+
+
+![aim_point_lateral_offset_distance](https://github.com/MarcusMakesGames/anime-homing-missile/assets/133889324/5c7ab8de-0db8-4660-9a1e-6da9dcd08445)
 
