@@ -93,4 +93,5 @@ This way the homing missile also hit the target from the sides and fly next to t
 
 ### Important Files
 **scenes/sandbox.tscn** is the level to test out the homing missiles
+
 **scripts/homing_missiles.tscn** is the script for the missiles
