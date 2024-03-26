@@ -74,6 +74,15 @@ It just uses two new values to calculate the forward offset:
 - min forward distance
 - max forward distance
 
+Combined with the lateral offset the homing missile now get a lot closer to the target during the approach.
+
 ![aim_point_forward_offset_01](https://github.com/MarcusMakesGames/anime-homing-missile/assets/133889324/efcfb148-79e5-4811-8f38-c2137f9ff619)
+
+The homing missile is now fully functional.
+
+![aim_point_forward_offset_02](https://github.com/MarcusMakesGames/anime-homing-missile/assets/133889324/aaeaff6d-c78d-4eef-bdf8-43e30ba31d5f)
+
+### Recommendations
+For moving targets it is recommended to not set the min lateral offset strength and min forward distance to 0.
 
 
