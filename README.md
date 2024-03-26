@@ -7,9 +7,7 @@ This is a proof of concept of "anime" style homing missiles that follow the targ
 ### Base Version
 The most basic version of a homing missiles has to do these 2 things:
 - fly forward
-- rotate towards and aim point
-
-In this basis version the aim point is at the same position as the target.
+- rotate towards the aim point (center of the target)
 
 With the correct values the homing missile will eventually reach the target and detonate.
  
