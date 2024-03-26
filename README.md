@@ -85,4 +85,12 @@ The homing missile is now fully functional.
 ### Recommendations
 For moving targets it is recommended to not set the min lateral offset strength and min forward distance to 0.
 
+In this example the min forward distance is set to 10 and the min lateral offset strength is also set to 10.
 
+This way the homing missile also hit the target from the sides and fly next to the target for a brief moment before hitting it.
+
+![final_homing_missile_barrage](https://github.com/MarcusMakesGames/anime-homing-missile/assets/133889324/1ca17193-95e0-4fdb-95b1-59b3d292e55e)
+
+### Important Files
+**scenes/sandbox.tscn** is the level to test out the homing missiles
+**scripts/homing_missiles.tscn** is the script for the missiles
