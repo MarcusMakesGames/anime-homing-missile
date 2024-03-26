@@ -17,6 +17,5 @@ With the correct values the homing missile will eventually reach the target and 
 
 
 ![aim_point_lateral_offset_01](https://github.com/MarcusMakesGames/anime-homing-missile/assets/133889324/f0037432-ed82-4e06-be82-acea64f39061)
-![aim_point_lateral_offset_02](https://github.com/MarcusMakesGames/anime-homing-missile/assets/133889324/30bffcb8-488b-4d89-b34d-97de1b044364)
-![aim_point_lateral_offset_03](https://github.com/MarcusMakesGames/anime-homing-missile/assets/133889324/70a02765-9a0a-4747-b5cf-9de872f1e198)
+![aim_point_lateral_offset_03](https://github.com/MarcusMakesGames/anime-homing-missile/assets/133889324/dc489b96-e568-45fb-ab38-bc5439707634)
 
