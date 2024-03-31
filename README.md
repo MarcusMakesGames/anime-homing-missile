@@ -5,7 +5,7 @@ This is a proof of concept of "anime" style homing missiles that follow the targ
 
 # How does it work?
 ### Base Version
-The most basic version of a homing missiles has to do these 2 things:
+The most basic version of a homing missile has to do these 2 things:
 
 - fly forward
 - rotate towards the aim point (center of the target)
